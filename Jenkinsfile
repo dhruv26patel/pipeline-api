@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Imports') {
             steps {
-                sh 'import pandas as pd'
-                sh 'from sodapy import Socrata'
+                sh 'python import pandas as pd'
+                sh 'python from sodapy import Socrata'
             }
         }
     }
