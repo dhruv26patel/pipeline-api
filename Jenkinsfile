@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('version call') {
+        stage('Imports') {
             steps {
-                sh 'python --version'
+                sh 'import pandas as pd'
+                sh 'from sodapy import Socrata'
             }
         }
     }
