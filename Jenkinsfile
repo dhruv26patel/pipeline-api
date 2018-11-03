@@ -3,11 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'brew install python3'
-                sh 'python3 --version'
-                sh 'whereis python3'
-                sh 'pip3 install requests'
-                sh 'python3 fetchData.py'
+                sh 'python --version'
+                sh 'whereis python'
+                sh 'pip install requests'
+                sh 'python fetchData.py'
             }
         }
     }
