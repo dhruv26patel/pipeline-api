@@ -1,10 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Imports') {
+        stage('API CALL') {
             steps {
-                sh 'python import pandas as pd'
-                sh 'python from sodapy import Socrata'
+                sh 'python fetechData.py'
             }
         }
     }
